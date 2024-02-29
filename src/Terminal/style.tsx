@@ -26,4 +26,7 @@ export const style = {
   lime: {
     color: "#76B947",
   },
+  orange: {
+    color: "#F57D1F",
+  },
 };

@@ -40,6 +40,46 @@ const work_experience = (
     </Ascii>
   </div>
 );
+const project = (
+  <span>
+    <strong style={style.orange}>Projects</strong>
+    <Ascii>
+      {`+--------------------------+--------------------------------------------------------------------------------+
+
+        ▄████████████████▄         PROJECT NAME: TMSS - TOYOTA MARKETING SALE SERVICE
+     ▄███▀────▄████▄────▀███▄  
+  ▄███▀──────▄█▀──▀█▄──────▀███▄   DESCRIPTION: A streamlined web application used by Toyota employees to oversee
+▄███▄───────██──────██───────▄███▄ automotive spare parts inventory, import/export, repair services, and customer
+██─▀██▄▄▄▄──██──────██──▄▄▄▄██▀─██ relations for efficient management. Achieved optimized processes, ensuring regulatory
+██───▀▀▀██████████████████▀▀▀───██ compliance and enhancing customer satisfaction, contributed to elevating industry
+▀██▄────────██▄────▄██────────▄██▀ standards through innovative solutions and effective management practices.
+ ▀██▄───────▀██▄──▄██▀───────▄██▀  
+     ▀███▄────▀████▀────▄███▀      TEAM SIZE: 10
+        ▀████████████████▀         ROLE: Full-Stack Developer
+`}
+    </Ascii>
+    <br />
+    <strong style={style.peach}>Personal Project</strong>
+    <br />
+    <strong>FIRECHAT</strong> <br />
+    <a>https://github.com/d1agnoze/firechat</a>
+    {" :"}
+    Chat app made with React and Firebase<br />
+    <br />
+    <strong>E-COMMERCE WEBSITE</strong>
+    <br />
+    <a>https://github.com/linhlban150612/ASPP</a>
+    {" :"}
+    Sneaker store built with classic ASP <br />
+    <br />
+    <strong>SECRET SAVER APP</strong>
+    <br />
+    <a>https://locker.vdac.id.vn</a>
+    {" :"}
+    a simple web application for saving your secrets( i promise it secured){" "}
+    <br />
+  </span>
+);
 
 export const commands = {
   help: (
@@ -57,22 +97,10 @@ export const commands = {
       - Change the prompt of the terminal.
     </span>
   ),
-  display: (
-    <span>
-      <pre>
-       {`
-###### #    #   ##   #    # #####  #      ######
-#       #  #   #  #  ##  ## #    # #      #
-#####    ##   #    # # ## # #    # #      #####
-#        ##   ###### #    # #####  #      #
-#       #  #  #    # #    # #      #      #
-###### #    # #    # #    # #      ###### ######`}
-      </pre>
-    </span>
-  ),
+  display: <span></span>,
   info: info,
   experience: work_experience,
-  projects: <span>Proecjt</span>,
+  projects: project,
   education: <span>Edu</span>,
   contact: <span>Contact</span>,
 };
@@ -88,9 +116,8 @@ export const welcome = (
 ░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝
 
 Welcome to my porfolio, 
-I am Nguyen Dac Vuong, a ${
-      (new Date()).getFullYear() - 2002
-    } year old web developer with a passion for technology and computer.
+I am Nguyen Dac Vuong, a ${(new Date()).getFullYear() - 2002
+      } year old web developer with a passion for technology and computer.
 Have a look around and feel free to contact me.
 
 ----------If you feel lost----------------
