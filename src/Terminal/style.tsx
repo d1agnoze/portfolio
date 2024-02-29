@@ -29,4 +29,13 @@ export const style = {
   orange: {
     color: "#F57D1F",
   },
+  white: {
+    color: "#ffffff",
+  },
+  black: {
+    color: "#000000",
+  },
+  gray: {
+    color: "#808080",
+  },
 };

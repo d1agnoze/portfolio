@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Boot from "./components/Boot";
 import Main from "./components/Main";
 
