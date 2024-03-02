@@ -7,7 +7,7 @@ const Boot = ({ isFinished }: { isFinished: (arg0: boolean) => void }) => {
   useEffect(() => {
     const fetchFile = async () => {
       try {
-        const response = await fetch("/assets/boot_log.txt");
+        const response = await fetch("/boot_log.txt");
         const content = await response.text();
         setLog(content.split("\n"));
       } catch (error) {
