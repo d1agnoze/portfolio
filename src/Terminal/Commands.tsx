@@ -1,17 +1,14 @@
 import { Ascii } from "./Ascii";
+import { links } from "./CONSTANT";
+import { Image } from "./StyledComponent";
 import { style } from "./style";
 
 const info = (
   <span>
-    <strong>Who am i?</strong> <br />
+    <strong>Who am i?</strong> <br /> <br />
     I am <strong>Nguyen Dac Vuong</strong>
     <div style={{ display: "flex", gap: "5px", alignItems: "start" }}>
-      <img
-        src="https://inkythuatso.com/uploads/images/2021/12/logo-dai-hoc-xay-dung-inkythuatso-01-13-15-35-18.jpg"
-        style={{ flex: "flex: 0 0 auto" }}
-        height={40}
-        width={49}
-      />
+      <Image src={links.logo_huce} size={40} />
       <p style={{ margin: 0, flex: "1" }}>
         🎓 an upcoming graduate from <br />
         <strong style={style.oceanBlue}>
@@ -64,7 +61,7 @@ const project = (
     <strong style={style.peach}>Personal Project</strong>
     <br />
     <strong>FIRECHAT</strong> <br />
-    <a href="https://github.com/d1agnoze/firechat">Firechat</a>
+    <a href={links.pro_firechat}>Firechat</a>
     {": "}
     Chat app made with <span style={style.cyan}>React</span> and{" "}
     <span style={style.orange}>Firebase</span>
@@ -72,13 +69,13 @@ const project = (
     <br />
     <strong>E-COMMERCE WEBSITE</strong>
     <br />
-    <a href="https://github.com/linhlban150612/ASPP">OBDG</a>
+    <a href={links.pro_obdg}>OBDG</a>
     {": "}
     Sneaker store built with <span style={style.red}>classic ASP</span> <br />
     <br />
     <strong>SECRET SAVER APP</strong>
     <br />
-    <a href="https://locker.vdac.id.vn">Locker</a>
+    <a href={links.pro_locker}>Locker</a>
     {": "}
     A simple <span style={style.gray}>Nextjs</span>{" "}
     web application dedicated to saving your secrets (i promise it's secured)
@@ -91,21 +88,15 @@ const education = (
     <strong style={style.yellow}>Education</strong>
     <br />
     ------------------------------------------------------------------
-    <table style={{ width: "80%" }}>
+    <table style={{ width: "50%" }}>
       <tr>
         <td>June 2023 - Febuary 2024</td>
         <td>
-          VNCLOUD JSC Full-stack web developer Main responsibilities: - Work on
-          both the front-end and back-end of the application, fix ongoing bugs,
-          and implement new features as well as improving the old ones
+          Hanoi University of Civil Engineering <br />{" "}
+          Major: Information Technology
         </td>
         <td>
-          <img
-            src="https://inkythuatso.com/uploads/images/2021/12/logo-dai-hoc-xay-dung-inkythuatso-01-13-15-35-18.jpg"
-            style={{ flex: "flex: 0 0 auto" }}
-            height={40}
-            width={49}
-          />
+          <Image src={links.logo_huce} size={40} />
         </td>
       </tr>
     </table>
@@ -126,54 +117,36 @@ const contact = (
       </tr>
       <tr>
         <td>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png"
-            style={{ flex: "flex: 0 0 auto" }}
-            height={20}
-            width={20}
-          />
+          <Image src={links.logo_github} />
         </td>
         <td>Github</td>
         <td>
-          <a>https://github.com/d1agnoze</a>
+          <a href={links.href_github}>github.com/d1agnoze</a>
         </td>
       </tr>
       <tr>
         <td>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
-            style={{ flex: "flex: 0 0 auto" }}
-            height={20}
-            width={20}
-          />
+          <Image src={links.logo_linkedin} />
         </td>
         <td>LinkedIn</td>
         <td>
-          <a>www.linkedin.com/in/vuong-dac-65b0732b0</a>
+          <a href={links.href_linkedin}>
+            linkedin.com/vuong-dac
+          </a>
         </td>
       </tr>
       <tr>
         <td>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png"
-            style={{ flex: "flex: 0 0 auto" }}
-            height={20}
-            width={20}
-          />
+          <Image src={links.logo_facebook} />
         </td>
         <td>Facebook</td>
         <td>
-          <a>https://www.facebook.com/d1agnoze</a>
+          <a href={links.href_facebook}>Vuong Dac</a>
         </td>
       </tr>
       <tr>
         <td>
-          <img
-            src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
-            style={{ flex: "flex: 0 0 auto" }}
-            height={20}
-            width={20}
-          />
+          <Image src={links.logo_zalo} />
         </td>
         <td>Zalo</td>
         <td>
@@ -207,11 +180,8 @@ const certs = (
     <span style={style.white}>Foundational C# with Microsoft</span>
     <br />
     <span style={style.oceanBlue}>2023</span>{" "}
-    <a href="https://www.freecodecamp.org/certification/vdac/foundational-c-sharp-with-microsoft">
-      certification link
-    </a>{" "}
+    <a href={links.Cert_Csharp}>certification link</a>
     <br />
-    ------------------------------------------------------------------<br />
   </span>
 );
 
@@ -239,6 +209,7 @@ export const commands = {
   display: (
     <span>
       {info}
+      <br />
       ------------------------------------------------------------------<br />
       {education}
       ------------------------------------------------------------------<br />
