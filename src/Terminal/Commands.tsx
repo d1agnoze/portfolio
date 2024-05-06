@@ -26,7 +26,7 @@ const work_experience = (
     <strong style={style.peach}>Work Experience</strong>
     <Ascii>
       {`+--------------------------+--------------------------------------------------------------------------------+
-| June 2023 - Febuary 2024 | VNCLOUD JSC                                                                    |
+| June 2023 - May 2024     | VNCLOUD JSC                                                                    |
 |                          | Full-stack web developer                                                       |
 |                          | Tech stack: .NET Core, Angular, SQL Server                                     |
 |                          | Main responsibilities:                                                         |
@@ -250,8 +250,8 @@ I am Nguyen Dac Vuong, a ${(new Date()).getFullYear() - 2002
 Have a look around and feel free to contact me.
 
 ----------If you feel lost----------------
-❓ Use 'help' for a list of available commands.
-🎯 Use 'display' to showcase all data about me
+> Use 'help' for a list of available commands.
+> Use 'display' to showcase all data about me
 `}
   </Ascii>
 );
